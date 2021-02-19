@@ -81,17 +81,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "WfdService",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "QtiTelephonyService",
 	owner: "oneplus",
 	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -139,14 +128,7 @@ android_app_import {
 }
 
 dex_import {
-	name: "WfdCommon",
-	owner: "oneplus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
-}
-
-dex_import {
 	name: "qcnvitems",
 	owner: "oneplus",
 	jars: ["proprietary/framework/qcnvitems.jar"],
 }
-
