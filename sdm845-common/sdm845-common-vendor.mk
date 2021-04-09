@@ -64,10 +64,102 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sdm845-common/proprietary/product/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmtcm.so \
     vendor/oneplus/sdm845-common/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/oneplus/sdm845-common/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/oneplus/sdm845-common/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
+    vendor/oneplus/sdm845-common/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/sdm845-common/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
     vendor/oneplus/sdm845-common/proprietary/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd \
     vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
-    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmiracastsystem.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdclient.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdcommonutils.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdconfigutils.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfddisplayconfig.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmminterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsink.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsrc_system.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdrtsp.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdservice.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdsinksm.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcinterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsink.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmiracastsystem.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfddisplayconfig.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmminterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdmmsink.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdnative.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdrtsp.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdsinksm.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfduibcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcinterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfduibcsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsink.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsinkinterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/oneplus/sdm845-common/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/bin/wfdhdcphalservice \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/bin/wfdvndservice:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/bin/wfdvndservice \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/bin/wifidisplayhalservice \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/init/wfdvndservice.rc \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/etc/wfdconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/wfdconfig.xml \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libmmrtpdecoder_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libmmrtpencoder_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdcodecv4l2_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdcommonutils_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdconfigutils_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdhdcpcp.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdhdcpservice_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdhdcpservice_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdmminterface_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdmminterface_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdmmservice_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdmmservice_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdmmsrc_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdmmsrc_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdmodulehdcpsession.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdrtsp_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdrtsp_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdsessionmodule.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdsessionmodule.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdsourcesession_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdsourcesession_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdsourcesm_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdsourcesm_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfduibcinterface_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfduibcinterface_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfduibcsinkinterface_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfduibcsinkinterface_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfduibcsink_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfduibcsink_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfduibcsrcinterface_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfduibcsrc_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib64/libwfdhdcpcp.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/seccomp_policy/wfdhdcphalservice.policy \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/seccomp_policy/wfdvndservice.policy \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libmmosal.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libmmosal.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfddisplayconfig_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/libwfdutils_proprietary.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib64/libmmosal.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib64/libmmosal.so \
+    vendor/oneplus/sdm845-common/proprietary/product/vendor_overlay/29/lib64/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib64/libwfddisplayconfig_proprietary.so
 
 PRODUCT_PACKAGES += \
     libantradio \
@@ -75,8 +167,10 @@ PRODUCT_PACKAGES += \
     NxpSecureElement \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
+    WfdService \
     QtiTelephonyService \
     AndroidAutoStub \
     ims \
     qcrilmsgtunnel \
+    WfdCommon \
     qcnvitems
